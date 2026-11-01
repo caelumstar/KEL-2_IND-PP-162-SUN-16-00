@@ -67,3 +67,27 @@ class TestWin (QWidget):
         self.setWindowTitle(txt_title)
         self.resize (win_width, win_height)
         self.move(win_x, win_y)
+
+    #part 2
+
+self.r_line.addwidget(self.text_timer, alignment = Qt.AlignCenter)
+self.l_line.addwidget(self.text_name, alignment = Qt.AlignLeft)
+self.l_line.addwidget(self.line_name, alignment = Qt.AlignLeft)
+self.l_line.addwidget(self.text_age, alignment = Qt.AlignLeft)
+self.l_line.addwidget(self.line_age, alignment = Qt.AlignLeft)
+self.l_line.addwidget(self.text_test1, alignment = Qt.AlignLeft)
+self.l_line.addwidget(self.btn_test1, alignment = Qt.AlignLeft)
+self.l_line.addwidget(self.line_test1, alignment = Qt.Alignleft)
+self.l_line.addwidget(self.text_test2, alignment = Qt.AlignLeft)
+self.l_line.addwidget(self.btn_test2, alignment = Qt.AlignLeft)
+self.l_line.addwidget(self.text_test3, alignment = Qt.AlignLeft)
+self.l_line.addwidget(self.btn_test3, alignment = Qt.AlignLeft)
+self.l_line.addwidget(self.line_test2, alignment = Qt.AlignLeft)
+self.l_line.addwidget(self.line_test3, alignment = Qt.AlignLeft)
+self.l_line.addwidget(self.btn_next, alignment = Qt.AlignCenter)
+self.h_line.addLayout (self.l_line) 
+self.h_line.addLayout (self.r_line)
+self.setLayout(self.h_line)
+
+def connects(self):
+    self.btn_next.clicked.connect(self.next_click)
