@@ -15,3 +15,13 @@ LINK GITHUB
 | erai       | erai |
 | marsnandra   | [Marsnan](https://github.com/I-Wayan-Marsnandra-Satria-Tangkas) | 
 | ayna   | ayna |
+
+
+Day 2
+
+| Name            | Task |
+|-----------------|---------|
+| Victoria     | final_win.py |
+| erai       | instr.py |
+| marsnandra   | second_win.py (part 1) | 
+| ayna   | second_win.py (part 2) |
