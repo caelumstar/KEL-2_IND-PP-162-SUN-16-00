@@ -94,3 +94,39 @@ self.setLayout(self.h_line)
 
 def connects(self):
     self.btn_next.clicked.connect(self.next_click)
+
+
+
+
+#day 3 part 2
+def timer1Event(self):
+    global time
+    time = time.addSecs(-1)
+    self.text_time.setText(time.toString("hh:mm:ss"))
+    self.text_time.setFont(QFont("Times", 36, QFont.Bold))
+    self.text_time.setStyleSheet("color: rgb(0,0,0)")
+    if time.toString("hh:mm:ss") == "00:00:00":
+        self.timer1.stop()
+def timer2Event(self):
+        global time
+        time = time.addSecs(-1)
+        self.text_time.setText(time.toString("hh:mm:ss")[6:8])
+        self.text_time.setStyleSheet("color: rgb(255,0,0)")
+        self.text_time.setFont(QFont("Times", 36, QFont.Bold))
+        if time.toString("hh:mm:ss") == "00:00:00":
+            self.timer2.stop()
+def timer3Event(self):
+        global time
+        time = time.addSecs(-1)
+        self.text_time.setText(time.toString("hh:mm:ss")[3:5])
+        if int(time.toString("hh:mm:ss")[6:8]) >= 45:
+             self.text_time.setStyleSheet("color: rgb(255,0,0)")
+        elif int(time.toString("hh:mm:ss")[6:8]) <= 15:
+             self.text_time.setStyleSheet("color: rgb(255,165,0)")
+        else:
+             self.text_time.setStyleSheet("color: rgb(255,165,0)")
+        self.text_time.setFont(QFont("Times", 36, QFont.Bold))
+        if time.toString("hh:mm:ss") == "00:00:00":
+            self.timer3.stop()
+     
+      
