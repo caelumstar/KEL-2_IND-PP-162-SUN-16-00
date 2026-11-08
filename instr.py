@@ -1,5 +1,8 @@
 # write a code for saving text instructions for the app
 #window preparation
+
+from PyQt5 import Qtime 
+
 win_x, win_y = 100, 100 
 win_width, win_height = 1000, 600
 
@@ -18,3 +21,12 @@ txt_name = 'Enter your full name: '
 txt_hintname = 'Full name:'
 txt_sendresults = 'Send the results'
 txt_finalwin = 'Results'
+
+# Day 3 "Marsnandra"
+time = Qtime (0,0,15)
+tx_timer = time.toString("hh:mm:ss")
+txt_res1 = 'low. See yoour doctor right away!'
+txt_res2 = 'satisfactory. See your doctor!'
+txt_res3 = 'average. It may be worth seeing your doctor to get checked out.' 
+txt_res4 = 'above average'
+txt_res5 = 'high'
