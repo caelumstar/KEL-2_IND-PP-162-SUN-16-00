@@ -87,6 +87,9 @@ self.l_line.addWidget(self.line_test3, alignment = Qt.AlignLeft)
 self.l_line.addWidget(self.btn_next, alignment = Qt.AlignCenter)
 self.h_line.addLayout (self.l_line) 
 self.h_line.addLayout (self.r_line)
+
+
+#day 3 part1
 self.setLayout(self.h_line)
 
 def connects(self):
